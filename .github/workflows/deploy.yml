@@ -32,7 +32,8 @@ jobs:
       - name: Prepare website
         run: |
           mkdir public
-          cp -a personal-website/. public/
+          cp -a . public/
+          rm -rf public/.git public/.github public/public
           touch public/.nojekyll
 
       - name: Upload website
