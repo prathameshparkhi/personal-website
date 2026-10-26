@@ -29,12 +29,13 @@ jobs:
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
+      
       - name: Prepare website
         run: |
           mkdir public
-          cp -a . public/
-          rm -rf public/.git public/.github public/public
+          rsync -av --exclude='.git' --exclude='.github' --exclude='public' ./ public/
           touch public/.nojekyll
+
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
