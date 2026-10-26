@@ -129,6 +129,12 @@ Open the terminal using the square icon in the navigation bar and enter:
 help
 ```
 
+### Pixel Window Buddy
+
+Click on the pixel bot at the bottom-right corner five times consecutively to unleash the minions!
+
+
+
 Then experiment with the commands listed above.
 
 ### Pixel interactions
@@ -178,16 +184,14 @@ No package installation is indicated by the supplied HTML and JavaScript. Any ad
 
 ## `06` — PROJECT STATUS
 
-**Status:** Under development  
-**Live demo:** Coming soon
-
-A live demo link will be added once the website has been deployed.
+**Status:** Deployed
+**Live demo:** Out!
 
 ## `07` — CREDITS
 
 - [Google Fonts](https://fonts.google.com/) — Press Start 2P and Space Mono.
-- Open-source documentation and learning resources used during development.
-- Additional third-party assets and libraries will be credited here where applicable.
+- ChatGPT Codex used for advanced animations and debugging.
+- Nano Banana used for image generation
 
 ---
 
