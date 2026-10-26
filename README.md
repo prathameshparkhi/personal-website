@@ -129,13 +129,12 @@ Open the terminal using the square icon in the navigation bar and enter:
 help
 ```
 
+Then experiment with the commands listed above.
+
 ### Pixel Window Buddy
 
 Click on the pixel bot at the bottom-right corner five times consecutively to unleash the minions!
 
-
-
-Then experiment with the commands listed above.
 
 ### Pixel interactions
 
