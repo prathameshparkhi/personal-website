@@ -1,4 +1,3 @@
-/* PRATHAMESH.EXE — main stylesheet */
 
 :root {
   --bg: #03050b;
@@ -11,7 +10,6 @@
   --line: rgba(222, 190, 255, .22);
   --shadow: rgba(255, 108, 175, .22);
 }
-
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -53,7 +51,6 @@ button { cursor: pointer; }
 .stars-b { background-size: 180px 180px; opacity: .22; animation-duration: 45s; animation-direction: reverse; }
 .stars-c { background-size: 280px 280px; opacity: .16; animation-duration: 65s; }
 @keyframes star-drift { to { transform: translateY(110px); } }
-
 .shooting-star {
   position: absolute;
   width: 2px;
@@ -105,6 +102,10 @@ button { cursor: pointer; }
   background: rgba(4,6,12,.82);
   backdrop-filter: blur(16px);
 }
+
+
+
+
 .brand {
   display: flex;
   align-items: center;
@@ -116,6 +117,9 @@ button { cursor: pointer; }
   font-weight: 400;
   transition: color .25s, text-shadow .25s;
 }
+
+
+
 .brand:hover { color: var(--pink); text-shadow: 0 0 10px rgba(255,108,175,.45); }
 .brand-icon { color: var(--pink); font: 400 23px "Space Mono", monospace; text-shadow: 0 0 10px var(--pink); }
 .pink { color: var(--pink); }
@@ -148,6 +152,10 @@ button { cursor: pointer; }
   background: var(--pink);
   transition: width .25s;
 }
+
+
+
+
 .nav-link:hover, .nav-link.active { color: var(--pink); }
 .nav-link:hover::after, .nav-link.active::after { width: 100%; }
 .icon-button {
@@ -169,6 +177,10 @@ button { cursor: pointer; }
   border: 1px solid var(--line);
   background: linear-gradient(145deg, rgba(9,12,20,.94), rgba(3,5,11,.96));
 }
+
+
+
+
 .panel::after {
   content: "";
   position: absolute;
@@ -188,6 +200,8 @@ h2 span { color: var(--pink); }
 .cursor { color: var(--pink); animation: blink 1s steps(1) infinite; }
 @keyframes blink { 50% { opacity: 0; } }
 
+
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -200,27 +214,41 @@ h2 span { color: var(--pink); }
   letter-spacing: 1px;
   transition: background .25s, color .25s, transform .25s;
 }
+
+
+
 .button:hover { background: var(--pink); color: var(--bg); transform: translateY(-3px); }
 .button.small { margin-top: 20px; padding: 11px 15px; }
 
 /* Hero */
 .hero { position: relative; min-height: 620px; display: grid; place-items: center; text-align: center; }
 .hero-content { position: relative; z-index: 2; animation: hero-in 1s ease both; }
+
 @keyframes hero-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
 .hero .eyebrow { margin-bottom: 25px; }
 .hero-copy { margin: 27px 0 30px; color: var(--lavender); font-size: 13px; line-height: 1.9; }
+
+
 .planet { position: absolute; left: 50%; bottom: 48px; width: 65px; height: 65px; transform: translateX(-50%); animation: planet-float 4s ease-in-out infinite; }
 .planet-body {
   position: absolute;
   inset: 13px;
+
+  
   border-radius: 50%;
   background: radial-gradient(circle at 30% 25%, #db9fff, #7b42bc 55%, #271047);
   box-shadow: 0 0 22px rgba(181,124,255,.5);
 }
+
+
 .planet-ring { position: absolute; top: 22px; left: -5px; width: 76px; height: 20px; border: 2px solid var(--pink); border-radius: 50%; transform: rotate(-18deg); }
 @keyframes planet-float { 50% { transform: translate(-50%, -12px); } }
 .scroll-cue { position: absolute; bottom: 18px; color: var(--pink); animation: bounce 1.5s infinite; }
 @keyframes bounce { 50% { transform: translateY(7px); } }
+
+
+
+
 
 /* Blog */
 .blog { min-height: 570px; padding: 90px 6%; display: flex; align-items: center; justify-content: space-between; gap: 60px; }
@@ -228,6 +256,10 @@ h2 span { color: var(--pink); }
 .blog-copy .eyebrow { margin-bottom: 25px; }
 .blog-copy > p:not(.eyebrow) { max-width: 430px; margin-top: 24px; color: var(--muted); font-size: 12px; line-height: 1.8; }
 .hearts { margin-top: 35px; color: var(--pink); font-size: 20px; letter-spacing: 6px; }
+
+
+
+
 
 /* Game Boy */
 .gameboy {
@@ -348,6 +380,8 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 30px
 .signal-close { border: 0; background: transparent; color: inherit; font-size: 27px; opacity: .7; }
 .signal-close:hover { opacity: 1; }
 .signal-content { padding: 32px; }
+
+
 .signal-status { display: flex; align-items: center; gap: 8px; font-size: 9px; letter-spacing: 2px; opacity: .6; }
 .signal-status span { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
 .signal-content h2 { margin: 25px 0 12px; font-size: clamp(30px, 6vw, 52px); line-height: .95; }
@@ -361,6 +395,7 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 30px
 .signal-card strong { margin: 4px 0; font-size: 11px; letter-spacing: 1px; }
 .signal-card span { overflow: hidden; font-size: 8px; opacity: .55; text-overflow: ellipsis; }
 .signal-card b { opacity: .4; }
+
 .signal-footer { display: flex; justify-content: space-between; margin-top: 28px; padding-top: 16px; border-top: 1px solid rgba(255,255,255,.08); font-size: 8px; letter-spacing: 1.5px; opacity: .45; }
 
 /* Current status */
@@ -380,6 +415,18 @@ footer { display: flex; justify-content: space-between; gap: 20px; padding: 30px
 .project-status { margin-bottom: 35px; font-size: .75rem; letter-spacing: .12em; opacity: .7; }
 .project-status span { display: inline-block; margin-right: 8px; animation: status-blink 1.5s infinite; }
 @keyframes status-blink { 0%, 45% { opacity: 1; } 46%, 100% { opacity: .25; } }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Stardance colour mode */
 body.stardance-mode {
@@ -417,6 +464,9 @@ body.stardance-mode .icon-button { box-shadow: 0 0 12px rgba(255,80,210,.2); }
 .folder-icon { font-size: 36px; filter: hue-rotate(245deg) saturate(1.4); }
 .folder:hover { transform: translateY(-4px); background: rgba(243,140,255,.08); }
 .folder:focus-visible { outline: 2px solid #f38cff; outline-offset: 3px; }
+
+
+
 
 /* Pixel.exe companion */
 #pixel-companion {
