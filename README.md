@@ -2,204 +2,55 @@
 ![PRATHAMESH.EXE Preview](./preview.png)
 
 ![Website Screenshot 2](./preview1.png)
-<p align="center">
-  <samp>THOUGHTS. CODE. CURIOSITY.</samp>
-  <br><br>
-  <em>A little world somewhere between the internet and outer space.</em>
-  <br><br>
-  <code>PERSONAL WEBSITE&nbsp; / &nbsp;Y2K AESTHETIC&nbsp; / &nbsp;INTERACTIVE WEB EXPERIMENT</code>
-</p>
 
 
-<p align="center">
-  <strong>◈ EXPLORE THE INTERFACE · DISCOVER THE SECRETS · MEET PIXEL</strong>
-</p>
 
----
 
-## `00` — SYSTEM OVERVIEW
+# welcome to my corner of the internet!
 
-PRATHAMESH.EXE is a personal website inspired by Y2K interfaces, pixel art, cosmic imagery, and the early internet.
+this wesbsite was never meant to be made until i stumbled upon stardance (mainly cuz i thought making a personal site would be the easiest)
 
-Instead of treating a portfolio as a static page, it experiments with making a website feel like a place of its own: a retro-inspired digital environment with an interactive terminal, a tiny alien companion, a pixel-art lamp, and hidden surprises.
+check it out here: [PRATHAMESH.EXE](https://prathameshparkhi.github.io/personal-website/)
 
-```text
-┌─────────────────────────────────────┐
-│  SYSTEM       PRATHAMESH.EXE         │
-│  AESTHETIC    RETRO-FUTURISTIC       │
-│  ENVIRONMENT  WEB BROWSER            │
-│  STATUS       UNDER DEVELOPMENT     │
-└─────────────────────────────────────┘
-```
+### features
 
-## `01` — EXPLORE THE SYSTEM
+- **blog** — this pages lists all my projects, my goals and my academic status
+- **interactive terminal** — a harmless little terminal where you can type `help` for more commands
+- **Pixel.exe** — a tiny digital roommate. pet it, feed it, make it dance, or just stare at it
+- **A/B buttons** — interactive little buttons on the console. go ahead and press A or B.
+- **retro-inspired design** — cute pixel-inspired details, random system messages, stars, and an old-school digital theme
+- **interactive elements** — little animations and details that make the website feel more alive.
+- **contact section** — links to find me around the internet, including GitHub, LinkedIn, and Instagram.
 
-### 💻 The interface
+### easter eggs 🥚
 
-- A cosmic backdrop featuring layered stars, shooting stars, and a grid floor.
-- A retro-inspired loading sequence with animated progress and system messages.
-- Section navigation with active states and scroll-triggered reveals.
-- Magnetic hover effects and a tilt interaction on the Game Boy illustration.
+there's more to explore here than just the main sections i promise
 
-<!-- SCREENSHOT 02: LANDING PAGE
-     Recommended file: assets/homepage.png
-     Capture the homepage with the navigation and hero section visible.
-     Insert this image directly below the bullets above if you want
-     a second, more detailed view of the landing page. -->
+- open the terminal and type `help` to discover its commands.
+- find Pixel.exe and interact with your tiny digital roommate.
+- experiment with the A and B buttons on the homepage.
+- keep an eye out for the little visual details scattered throughout the site.
+- type `stardance` while you are on the home page
+- click the buddy at the corner 5 times
 
-### ▣ The terminal
+i spent a ton of time giving thought to the insignificant secrets
 
-An interactive terminal with commands for exploring the site's content and switching its visual mode.
+### built with
 
-| Command | Function |
-|:--|:--|
-| `help` | Lists available commands |
-| `about` | Displays a short introduction |
-| `projects` | Shows the built-in project list |
-| `blog` | Displays the blog description |
-| `contact` | Points towards the contact section |
-| `stardance` | Toggles Stardance mode |
-| `normal` | Returns to the default visual mode |
-| `clear` | Clears the terminal output |
+- HTML
+- CSS
+- JavaScript
 
-<!-- SCREENSHOT 03: TERMINAL
-     Recommended file: assets/terminal.png
-     Open the terminal and enter "help" before taking the screenshot.
-     Insert the image directly below this terminal section. -->
+### about the project 💭
 
-### 👾 PIXEL.EXE
+so, I decided to create my own website. i didn't want another boring portfolio featuring several projects, some writing, and not much else. instead, I wanted somewhere where I could incorporate everything I liked in one spot. and that includes a retro-inspired, interactive design for the sake of having fun during development.
 
-Meet the tiny digital alien living on the page.
+the majority of the process consisted of creating the aesthetics, animations, and overall combining all of these aspects into something cohesive. furthermore, i wanted more than just something that looks good. why not add a bit more functionality through various interactive features, including the terminal and Pixel.exe?
 
-The companion has its own pixel-art sprite, status display, speech bubble, and interaction menu.
+i received assistance from AI for certain aspects of this project. specifically, it helped me develop certain animations and visual aspects within the design. essentially, AI acted as an additional resource for experimentation during this project, as well as implementing new technologies and techniques i hadn't played around with before.
 
-- ♡ **Pet**
-- ✦ **Feed**
-- ♫ **Dance**
-- ? **Help**
+overall, this project served as an excellent exercise in front-end development, allowing me to gain valuable knowledge by applying theory to practical use.
 
-<!-- SCREENSHOT 04: PIXEL COMPANION
-     Recommended file: assets/pixel-companion.png
-     Capture Pixel with the interaction window open.
-     Insert the image directly below this section. -->
+this website remains under construction, and i am eager to implement a number of improvements and additions soon enough.
 
-### 🎮 The Game Boy
-
-A miniature retro-console-inspired visual with a pixel-art city scene and interactive A and B buttons.
-
-Press either button to trigger a randomly selected message. It's a small detail, but that's the point.
-
-<!-- SCREENSHOT 05: GAME BOY
-     Recommended file: assets/gameboy.png
-     Capture the console with its screen and A/B buttons visible.
-     This screenshot is optional. -->
-
-### 💡 The pixel lamp
-
-A hanging pixel-art lamp with an interactive switch and a bright illumination effect.
-
-Switch it on and let the glow change the atmosphere of the page.
-
-<!-- SCREENSHOT 06: PIXEL LAMP
-     Recommended file: assets/pixel-lamp.png
-     Capture the actual website with the lamp switched ON and visibly glowing.
-     Insert the image directly below this section. -->
-
-### ✦ Signal Centre
-
-The contact section opens a dedicated signal-centre interface with contact cards for email, GitHub, LinkedIn, and Instagram.
-
-The current HTML contains placeholder contact details, so those links need to be configured before the site is published.
-
-## `02` — SECRETS & EASTER EGGS
-
-Some of the fun is in knowing where to look.
-
-### The Stardance sequence
-
-Type the letters `stardance` consecutively while the page is active, without typing inside the terminal input.
-
-The page triggers a brief hue-shift animation and displays a Stardance notification.
-
-### Terminal discovery
-
-Open the terminal using the square icon in the navigation bar and enter:
-
-```text
-help
-```
-
-Then experiment with the commands listed above.
-
-### Pixel Window Buddy
-
-Click on the pixel bot at the bottom-right corner five times consecutively to unleash the minions!
-
-
-### Pixel interactions
-
-Open Pixel's menu and try each of its four controls.
-
-### Game Boy buttons
-
-Press A and B to reveal different sets of messages.
-
-*Keyboard shortcut note: the documented secret is a typed character sequence, not a dedicated function-key combination.*
-
-## `03` — DESIGN LANGUAGE
-
-```text
-PALETTE       BLACK / HOT PINK / PURPLE / LAVENDER
-TYPOGRAPHY    PRESS START 2P / SPACE MONO
-INSPIRATION   Y2K / PIXEL ART / EARLY INTERNET
-ATMOSPHERE    COSMIC / DIGITAL / RETRO-FUTURISTIC
-```
-
-The design borrows from an era when websites felt like individual places rather than interchangeable templates. Pixel details, terminal panels, and cosmic visuals create a consistent visual identity.
-
-The goal isn't to add animation everywhere. It's to make the interface, its interactions, and its atmosphere feel like parts of the same world.
-
-## `04` — BUILT WITH
-
-| Technology | Purpose |
-|:--|:--|
-| HTML5 | Structure and content |
-| CSS3 | Layout, styling, and visual effects |
-| JavaScript | Interactions, terminal commands, and Easter eggs |
-| Google Fonts | Press Start 2P and Space Mono |
-| Git & GitHub | Version control and source hosting |
-
-The project uses browser-native technologies without a large frontend framework.
-
-## `05` — RUN LOCALLY
-
-**Requirements:** A modern browser and the complete project files.
-
-Keep `index.html`, `style.css`, `script.js`, `model.js` (if used by your project), and the referenced assets in their correct locations.
-
-Open `index.html` in a browser, or open the project folder in VS Code and use a local development server.
-
-No package installation is indicated by the supplied HTML and JavaScript. Any additional dependencies or setup requirements should be documented if the project needs them.
-
-## `06` — PROJECT STATUS
-
-**Status:** Deployed
-**Live demo:** Out!
-
-## `07` — CREDITS
-
-- [Google Fonts](https://fonts.google.com/) — Press Start 2P and Space Mono.
-- ChatGPT Codex used for advanced animations and debugging.
-- Nano Banana used for image generation
-
----
-
-<p align="center">
-  <samp>END OF TRANSMISSION</samp>
-  <br><br>
-  <strong>PRATHAMESH.EXE</strong>
-  <br>
-  <em>A personal website. A digital playground. A work in progress.</em>
-  <br><br>
-  <code>CONNECTION TERMINATED_</code>
-</p>
+for now, welcome to PRATHAMESH.EXE. explore and discover all
