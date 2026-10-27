@@ -1,393 +1,401 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="PRATHAMESH.EXE — code, ideas, and curiosity.">
+<meta name="description" content="PRATHAMESH.EXE — code, ideas, and curiosity.">
     <title>PRATHAMESH.EXE</title>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <div class="loader" id="loader">
+<div class="loader" id="loader">
         <div class="loader-logo">PRATHAMESH.EXE</div>
-        <div class="loader-bar"><span id="loaderProgress"></span></div>
+    <div class="loader-bar"><span id="loaderProgress"></span></div>
         <div class="loader-text" id="loaderText">INITIALIZING SYSTEM...</div>
-    </div>
+</div>
+
 
     <div class="space-bg">
-        <div class="stars stars-a"></div>
+<div class="stars stars-a"></div>
         <div class="stars stars-b"></div>
-        <div class="stars stars-c"></div>
+    <div class="stars stars-c"></div>
         <span class="shooting-star"></span>
-        <span class="shooting-star"></span>
-        <span class="shooting-star"></span>
+<span class="shooting-star"></span>
+            <span class="shooting-star"></span>
         <div class="grid-floor"></div>
     </div>
 
-    <div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-dot" id="cursorDot"></div>
     <div class="cursor-ring" id="cursorRing"></div>
 
-    <div class="site-shell">
 
-        <header class="topbar">
-            <a href="#home" class="brand magnetic">
-                <span class="brand-icon">✣</span>
-                <span>PRATHAMESH<span class="pink">.EXE</span></span>
-            </a>
+<div class="site-shell">
+    <header class="topbar">
+<a href="#home" class="brand magnetic">
+        <span class="brand-icon">✣</span>
+            <span>PRATHAMESH<span class="pink">.EXE</span></span>
+</a>
 
-            <nav class="nav">
-                <a href="#home" class="nav-link active">HOME</a>
-                <a href="#about" class="nav-link">ABOUT</a>
-                <a href="#contact" class="nav-link">CONTACT</a>
-            </nav>
+        <nav class="nav">
+    <a href="#home" class="nav-link active">HOME</a>
+            <a href="#about" class="nav-link">ABOUT</a>
+        <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
 
-            <button class="icon-button magnetic" id="systemButton" aria-label="Open terminal">
-                ▣
-            </button>
-        </header>
-
-        <main>
-
-            <section id="home" class="hero panel reveal">
-
-                <div class="hero-content">
-                    <h1>
-                        Prathamesh<br>
-                        Here!<span class="cursor">_</span>
-                    </h1>
-
-                    <a href="#about" class="button magnetic">
-                        <span>›</span>
-                        START EXPLORING
-                    </a>
-                </div>
-
-                <div class="planet">
-                    <div class="planet-ring"></div>
-                    <div class="planet-body"></div>
-                </div>
-
-                <div class="scroll-cue">↓</div>
-            </section>
-
-            
-            <section id="about" class="about panel reveal">
-        
-                <div class="about-copy">
-                    <h2>
-                        ABOUT<br>
-                        ME
-                    </h2>
-
-                    <p>
-                        I'm a Grade XI student interested in AI, programming,
-                        mathematics, and how technology can solve real problems.
-                    </p>
-
-                    <p>
-                        Outside coding, I enjoy writing, photography,
-                        and exploring ideas across different fields.
-                    </p>
-
-                    <a href="#contact" class="button small magnetic">
-                        LET'S CONNECT →
-                    </a>
-                </div>
-
-                <div class="interest-box">
-                    <article class="interest">
-                        <span class="interest-icon">★</span>
-                        <div>
-                            <strong>RESEARCH</strong>
-                            <small>Exploring questions and testing ideas.</small>
-                        </div>
-                    </article>
-
-                    <article class="interest">
-                        <span class="interest-icon code">&lt;/&gt;</span>
-                        <div>
-                            <strong>CODING</strong>
-                            <small>Building projects and learning by doing.</small>
-                        </div>
-                    </article>
-
-                    <article class="interest">
-                        <span class="interest-icon">♫</span>
-                        <div>
-                            <strong>WRITING</strong>
-                            <small>Putting thoughts and observations into words.</small>
-                        </div>
-                    </article>
-
-                    <article class="interest">
-                        <span class="interest-icon">♥</span>
-                        <div>
-                            <strong>MATHEMATICS</strong>
-                            <small>Patterns, logic, and problem-solving.</small>
-                        </div>
-                    </article>
-                </div>
-            </section>
-
-            <section id="contact" class="contact panel reveal">
+        <button class="icon-button magnetic" id="systemButton" aria-label="Open terminal">
+    ▣
+        </button>
+</header>
 
 
-                <h2>
-                    LET'S<br>
-                    <span>TALK.</span>
-                </h2>
+<main>
+    <section id="home" class="hero panel reveal">
+        <div class="hero-content">
 
-                <p>Have an idea or want to connect?</p>
+<h1>
+                Prathamesh<br>
+    Here!<span class="cursor">_</span>
+            </h1>
 
-                <button class="button magnetic" id="signalButton">
-                    SEND A SIGNAL →
-                </button>
-            </section>
-
-        </main>
-
-    
+                <a href="#about" class="button magnetic">
+            <span>›</span>
+                    START EXPLORING
+                </a>
     </div>
 
-    <div class="modal" id="terminalModal" aria-hidden="true">
-        <div class="terminal">
-            <div class="terminal-bar">
-                <button id="closeTerminal" aria-label="Close terminal">×</button>
-            </div>
-
-            <div class="terminal-body" id="terminalOutput">
-                <p>Welcome to PRATHAMESH.EXE.</p>
-                <p>Type <b>help</b> to see available commands.</p>
-            </div>
-
-            <form class="terminal-form" id="terminalForm">
-                <span>&gt;</span>
-                <input
-                    id="terminalInput"
-                    autocomplete="off"
-                    spellcheck="false"
-                    aria-label="Terminal command"
-                >
-            </form>
+        <div class="planet">
+<div class="planet-ring"></div>
+                <div class="planet-body"></div>
         </div>
+
+    <div class="scroll-cue">↓</div>
+    </section>
+
+
+
+    <section id="about" class="about panel reveal">
+
+<div class="about-copy">
+        <h2>
+            ABOUT<br>
+                ME
+    </h2>
+
+        <p>
+I'm a Grade XI student interested in AI, programming,
+            mathematics, and how technology can solve real problems.
+        </p>
+
+    <p>
+            Outside coding, I enjoy writing, photography,
+        and exploring ideas across different fields.
+    </p>
+
+            <a href="#contact" class="button small magnetic">
+        LET'S CONNECT →
+            </a>
+</div>
+
+
+<div class="interest-box">
+        <article class="interest">
+    <span class="interest-icon">★</span>
+            <div>
+        <strong>RESEARCH</strong>
+                <small>Exploring questions and testing ideas.</small>
     </div>
+        </article>
+
+    <article class="interest">
+            <span class="interest-icon code">&lt;/&gt;</span>
+        <div>
+<strong>CODING</strong>
+                <small>Building projects and learning by doing.</small>
+        </div>
+    </article>
+
+        <article class="interest">
+    <span class="interest-icon">♫</span>
+            <div>
+                <strong>WRITING</strong>
+        <small>Putting thoughts and observations into words.</small>
+            </div>
+        </article>
+
+    <article class="interest">
+        <span class="interest-icon">♥</span>
+                <div>
+            <strong>MATHEMATICS</strong>
+                <small>Patterns, logic, and problem-solving.</small>
+        </div>
+    </article>
+    </div>
+        </section>
+
+
+    <section id="contact" class="contact panel reveal">
+
+        <h2>
+    LET'S<br>
+            <span>TALK.</span>
+        </h2>
+
+<p>Have an idea or want to connect?</p>
+
+            <button class="button magnetic" id="signalButton">
+    SEND A SIGNAL →
+        </button>
+    </section>
+
+</main>
+</div>
+
+
+<div class="modal" id="terminalModal" aria-hidden="true">
+        <div class="terminal">
+    <div class="terminal-bar">
+            <button id="closeTerminal" aria-label="Close terminal">×</button>
+        </div>
+
+<div class="terminal-body" id="terminalOutput">
+            <p>Welcome to PRATHAMESH.EXE.</p>
+        <p>Type <b>help</b> to see available commands.</p>
+    </div>
+
+        <form class="terminal-form" id="terminalForm">
+    <span>&gt;</span>
+            <input
+        id="terminalInput"
+                autocomplete="off"
+            spellcheck="false"
+                aria-label="Terminal command"
+            >
+    </form>
+        </div>
+</div>
 
     <div class="toast" id="toast"></div>
 
-    <div class="modal" id="signalModal" aria-hidden="true">
-        <div class="signal-terminal">
 
-            <div class="signal-header">
-                <div class="signal-title">
-                    <span class="signal-icon">✦</span>
-                    <div>
-                    
-                        <strong>SIGNAL CENTER</strong>
-                    </div>
-                </div>
+<div class="modal" id="signalModal" aria-hidden="true">
+    <div class="signal-terminal">
 
-                <button
-                    id="closeSignal"
-                    class="signal-close"
-                    aria-label="Close signal center"
-                >
-                    ×
-                </button>
-            </div>
+        <div class="signal-header">
+    <div class="signal-title">
+                <span class="signal-icon">✦</span>
+            <div>
 
-            <div class="signal-content">
-                <div class="signal-status">
-                    <span></span>
-            
-                </div>
-
-                <h2>
-                    SEND A<br>
-                    <span>SIGNAL.</span>
-                </h2>
-
-                <p class="signal-intro">
-                    Find me around the internet.
-                </p>
-
-                <div class="signal-grid">
-
-                    <a href="mailto:prathameshpvp@gmail.com" class="signal-card">
-                        <div class="signal-card-icon">✉</div>
-                        <div>
-                            <small>DIRECT CHANNEL</small>
-                            <strong>EMAIL</strong>
-                            <span>prathameshpvp@gmail.com</span>
-                        </div>
-                        <b>↗</b>
-                    </a>
-
-                    <a
-                        href="https://github.com/prathameshparkhi"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="signal-card"
-                    >
-                        <div class="signal-card-icon">&lt;/&gt;</div>
-                        <div>
-                            <small>SOURCE CODE</small>
-                            <strong>GITHUB</strong>
-                            <span>@prathameshparkhi</span>
-                        </div>
-                        <b>↗</b>
-                    </a>
-
-                    <a
-                        href="https://www.linkedin.com/in/prathameshparkhi/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="signal-card"
-                    >
-                        <div class="signal-card-icon">in</div>
-                        <div>
-                            <small>PROFESSIONAL</small>
-                            <strong>LINKEDIN</strong>
-                            <span>Prathamesh Parkhi</span>
-                        </div>
-                        <b>↗</b>
-                    </a>
-
-                    <a
-                        href="https://www.instagram.com/sybauprathmeshh?vrfl=bXdmdTU1aTlsaHg3"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="signal-card"
-                    >
-                        <div class="signal-card-icon">◎</div>
-                        <div>
-                            <small>VISUAL FEED</small>
-                            <strong>INSTAGRAM</strong>
-                            <span>sybauprathmeshh</span>
-                        </div>
-                        <b>↗</b>
-                    </a>
-
-                </div>
-
-                <div class="signal-footer">
-                </div>
+                <strong>SIGNAL CENTER</strong>
             </div>
         </div>
+
+            <button
+        id="closeSignal"
+                class="signal-close"
+            aria-label="Close signal center"
+                >
+        ×
+            </button>
     </div>
 
-    <div id="pixel-companion" aria-label="Pixel, your digital alien companion">
-        <div class="pixel-bubble" id="pixel-bubble" role="status" aria-live="polite">
-            Hey! I'm Pixel 👾 Click me!
+
+        <div class="signal-content">
+    <div class="signal-status">
+                <span></span>
+
         </div>
 
-        <div class="pixel-window" id="pixel-window" hidden>
-            <div class="pixel-window-head">
-                <span>PIXEL.EXE</span>
-                <button id="pixel-close" aria-label="Close companion menu">×</button>
-            </div>
+<h2>
+            SEND A<br>
+    <span>SIGNAL.</span>
+        </h2>
 
-            <p class="pixel-status">
-                STATUS: <span id="pixel-mood">CURIOUS</span>
+            <p class="signal-intro">
+        Find me around the internet.
+            </p>
+
+
+<div class="signal-grid">
+
+        <a href="mailto:prathameshpvp@gmail.com" class="signal-card">
+    <div class="signal-card-icon">✉</div>
+            <div>
+        <small>DIRECT CHANNEL</small>
+                <strong>EMAIL</strong>
+            <span>prathameshpvp@gmail.com</span>
+        </div>
+                <b>↗</b>
+        </a>
+
+    <a
+        href="https://github.com/prathameshparkhi"
+                target="_blank"
+            rel="noopener noreferrer"
+        class="signal-card"
+            >
+            <div class="signal-card-icon">&lt;/&gt;</div>
+        <div>
+                <small>SOURCE CODE</small>
+            <strong>GITHUB</strong>
+                    <span>@prathameshparkhi</span>
+        </div>
+    <b>↗</b>
+        </a>
+
+            <a
+    href="https://www.linkedin.com/in/prathameshparkhi/"
+                target="_blank"
+        rel="noopener noreferrer"
+            class="signal-card"
+    >
+        <div class="signal-card-icon">in</div>
+                <div>
+        <small>PROFESSIONAL</small>
+                    <strong>LINKEDIN</strong>
+            <span>Prathamesh Parkhi</span>
+                </div>
+        <b>↗</b>
+            </a>
+
+    <a
+            href="https://www.instagram.com/sybauprathmeshh?vrfl=bXdmdTU1aTlsaHg3"
+        target="_blank"
+                rel="noopener noreferrer"
+            class="signal-card"
+        >
+            <div class="signal-card-icon">◎</div>
+        <div>
+                <small>VISUAL FEED</small>
+            <strong>INSTAGRAM</strong>
+                <span>sybauprathmeshh</span>
+        </div>
+            <b>↗</b>
+    </a>
+
+        </div>
+
+    <div class="signal-footer">
+
+    </div>
+    </div>
+    </div>
+</div>
+
+
+
+<div id="pixel-companion" aria-label="Pixel, your digital alien companion">
+        <div class="pixel-bubble" id="pixel-bubble" role="status" aria-live="polite">
+    Hey! I'm Pixel 👾 Click me!
+        </div>
+
+    <div class="pixel-window" id="pixel-window" hidden>
+        <div class="pixel-window-head">
+                <span>PIXEL.EXE</span>
+            <button id="pixel-close" aria-label="Close companion menu">×</button>
+        </div>
+
+    <p class="pixel-status">
+        STATUS: <span id="pixel-mood">CURIOUS</span>
             </p>
 
             <div class="pixel-actions">
-                <button data-pixel-action="pet">♡ Pet</button>
-                <button data-pixel-action="feed">✦ Feed</button>
-                <button data-pixel-action="dance">♫ Dance</button>
+        <button data-pixel-action="pet">♡ Pet</button>
+            <button data-pixel-action="feed">✦ Feed</button>
+        <button data-pixel-action="dance">♫ Dance</button>
                 <button data-pixel-action="help">? Help</button>
             </div>
 
-            <p class="pixel-hint">Your tiny digital roommate.</p>
+    <p class="pixel-hint">Your tiny digital roommate.</p>
         </div>
 
-        <button id="pixel-creature" aria-label="Interact with Pixel">
-            <svg
-                class="pixel-sprite"
-                viewBox="0 0 32 32"
+
+<button id="pixel-creature" aria-label="Interact with Pixel">
+    <svg
+            class="pixel-sprite"
+        viewBox="0 0 32 32"
                 xmlns="http://www.w3.org/2000/svg"
-                shape-rendering="crispEdges"
-            >
-                <g class="pixel-antennae">
-                    <rect x="9" y="3" width="2" height="5" fill="#a855f7"/>
-                    <rect x="8" y="2" width="4" height="2" fill="#e9a8ff"/>
-                    <rect x="21" y="3" width="2" height="5" fill="#a855f7"/>
-                    <rect x="20" y="2" width="4" height="2" fill="#e9a8ff"/>
-                </g>
+            shape-rendering="crispEdges"
+        >
+    <g class="pixel-antennae">
+            <rect x="9" y="3" width="2" height="5" fill="#a855f7"/>
+        <rect x="8" y="2" width="4" height="2" fill="#e9a8ff"/>
+                <rect x="21" y="3" width="2" height="5" fill="#a855f7"/>
+        <rect x="20" y="2" width="4" height="2" fill="#e9a8ff"/>
+    </g>
 
-                <rect x="3" y="10" width="4" height="7" fill="#8b35d1"/>
-                <rect x="25" y="10" width="4" height="7" fill="#8b35d1"/>
+        <rect x="3" y="10" width="4" height="7" fill="#8b35d1"/>
+    <rect x="25" y="10" width="4" height="7" fill="#8b35d1"/>
 
-                <path
-                    d="M9 7H23V9H26V12H28V21H25V25H21V28H18V25H14V28H11V25H7V21H4V12H6V9H9Z"
-                    fill="#8b35d1"
-                />
+            <path
+        d="M9 7H23V9H26V12H28V21H25V25H21V28H18V25H14V28H11V25H7V21H4V12H6V9H9Z"
+            fill="#8b35d1"
+        />
 
-                <path
-                    d="M9 8H23V10H25V20H22V23H10V20H7V10H9Z"
-                    fill="#c084fc"
-                />
+    <path
+                d="M9 8H23V10H25V20H22V23H10V20H7V10H9Z"
+        fill="#c084fc"
+            />
 
-                <rect x="10" y="9" width="12" height="2" fill="#e9c5ff"/>
+        <rect x="10" y="9" width="12" height="2" fill="#e9c5ff"/>
 
-                <g class="pixel-eyes">
-                    <rect x="9" y="13" width="5" height="6" fill="#201037"/>
-                    <rect x="19" y="13" width="5" height="6" fill="#201037"/>
-                    <rect x="10" y="14" width="2" height="2" fill="#ffffff"/>
-                    <rect x="20" y="14" width="2" height="2" fill="#ffffff"/>
-                </g>
+    <g class="pixel-eyes">
+        <rect x="9" y="13" width="5" height="6" fill="#201037"/>
+                <rect x="19" y="13" width="5" height="6" fill="#201037"/>
+        <rect x="10" y="14" width="2" height="2" fill="#ffffff"/>
+            <rect x="20" y="14" width="2" height="2" fill="#ffffff"/>
+    </g>
 
-                <rect x="15" y="20" width="2" height="2" fill="#572184"/>
-                <rect x="9" y="25" width="5" height="3" fill="#a855f7"/>
-                <rect x="19" y="25" width="5" height="3" fill="#a855f7"/>
-                <rect x="8" y="27" width="6" height="2" fill="#e9a8ff"/>
-                <rect x="19" y="27" width="6" height="2" fill="#e9a8ff"/>
-                <rect x="6" y="18" width="3" height="2" fill="#f0abfc"/>
-                <rect x="23" y="18" width="3" height="2" fill="#f0abfc"/>
-            </svg>
+        <rect x="15" y="20" width="2" height="2" fill="#572184"/>
+    <rect x="9" y="25" width="5" height="3" fill="#a855f7"/>
+            <rect x="19" y="25" width="5" height="3" fill="#a855f7"/>
+        <rect x="8" y="27" width="6" height="2" fill="#e9a8ff"/>
+    <rect x="19" y="27" width="6" height="2" fill="#e9a8ff"/>
+            <rect x="6" y="18" width="3" height="2" fill="#f0abfc"/>
+        <rect x="23" y="18" width="3" height="2" fill="#f0abfc"/>
+    </svg>
 
-            <span class="pixel-shadow"></span>
-        </button>
+        <span class="pixel-shadow"></span>
+</button>
 
-        <div class="pixel-label">PIXEL.EXE <span>● ONLINE</span></div>
-    </div>
+    <div class="pixel-label">PIXEL.EXE <span>● ONLINE</span></div>
+</div>
 
-    <canvas id="pixel-trail" aria-hidden="true"></canvas>
+
+<canvas id="pixel-trail" aria-hidden="true"></canvas>
 
     <div id="pixel-lamp" class="lamp-off">
         <button id="lamp-switch" aria-label="Turn lamp on" aria-pressed="false">
-            <div class="lamp-chain">
+    <div class="lamp-chain">
                 <span></span><span></span><span></span><span></span>
-                <span></span><span></span>
-            </div>
+            <span></span><span></span>
+        </div>
 
             <div class="lamp-shade">
-                <div class="lamp-cap"></div>
+        <div class="lamp-cap"></div>
                 <div class="lamp-roof"></div>
-                <div class="lamp-roof-bottom"></div>
-                <div class="lamp-bulb"></div>
+            <div class="lamp-roof-bottom"></div>
+        <div class="lamp-bulb"></div>
                 <div class="lamp-rim"></div>
-            </div>
+    </div>
 
-            <div class="lamp-pull">
-                <span></span><span></span><span></span>
+        <div class="lamp-pull">
+            <span></span><span></span><span></span>
                 <i></i>
-            </div>
+        </div>
         </button>
 
-        <div class="lamp-light">
+    <div class="lamp-light">
             <div class="light-pixel p1"></div>
-            <div class="light-pixel p2"></div>
-            <div class="light-pixel p3"></div>
+        <div class="light-pixel p2"></div>
+                <div class="light-pixel p3"></div>
             <div class="light-pixel p4"></div>
-            <div class="light-pixel p5"></div>
-        </div>
+        <div class="light-pixel p5"></div>
     </div>
+</div>
 
     <script src="script.js"></script>
 </body>
