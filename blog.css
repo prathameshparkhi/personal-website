@@ -1509,3 +1509,170 @@ button:disabled {
   }
 }
 
+
+
+/* PRATHAMESH.EXE — visual refinement */
+
+/* Keep the palette, tone down the glow. */
+
+:root {
+  --line: rgba(213, 184, 255, 0.16);
+  --pink-line: rgba(255, 108, 175, 0.4);
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+/* Background: keep the stars, lose the excessive atmosphere. */
+
+.starfield {
+  background: #03050b;
+}
+
+.starfield::before {
+  opacity: 0.4;
+  animation: none;
+}
+
+.starfield::after {
+  opacity: 0.2;
+  animation: none;
+}
+
+.desktop-area::before {
+  opacity: 0.12;
+  animation: none;
+}
+
+.desktop-area::after {
+  opacity: 0.07;
+  filter: blur(55px);
+  animation: none;
+}
+
+/* Scanlines should be barely noticeable. */
+
+.scanlines {
+  opacity: 0.055;
+}
+
+/* Typography: no need to glow everything. */
+
+.system-brand {
+  text-shadow: none;
+}
+
+.system-brand:hover {
+  text-shadow: none;
+}
+
+.brand-symbol {
+  text-shadow: none;
+}
+
+.desktop-heading h1 {
+  text-shadow: 0 2px 18px rgba(181, 124, 255, 0.12);
+}
+
+/* Remove unnecessary movement from the main interface. */
+
+.desktop-heading {
+  animation: none;
+}
+
+.window {
+  animation: none;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+/* More restrained desktop shortcuts. */
+
+.desktop-icon {
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.desktop-icon:hover {
+  transform: none;
+  border-color: var(--line);
+  background: rgba(181, 124, 255, 0.045);
+}
+
+.desktop-icon-art {
+  box-shadow: none;
+}
+
+.desktop-icon:hover .desktop-icon-art {
+  box-shadow: none;
+}
+
+/* Simpler window controls. */
+
+.window-control {
+  transition: background 120ms ease, color 120ms ease;
+}
+
+.window-control:hover {
+  background: rgba(255, 108, 175, 0.12);
+  color: var(--pink);
+}
+
+.close-control:hover {
+  background: #ff667a;
+  color: var(--bg);
+}
+
+/* Cleaner file explorer interactions. */
+
+.folder-link,
+.filter-chip,
+.file-row,
+.search-box {
+  transition: background 140ms ease, border-color 140ms ease;
+}
+
+.file-row:hover,
+.file-row:focus-visible {
+  box-shadow: inset 2px 0 var(--pink);
+}
+
+.search-box:focus-within {
+  box-shadow: none;
+}
+
+/* Buttons should feel functional, not decorative. */
+
+.neon-button {
+  transition: background 140ms ease, color 140ms ease;
+}
+
+.neon-button:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+.reader-body a {
+  text-decoration-thickness: 1px;
+}
+
+/* Keep the status indicator static. */
+
+.status-light {
+  animation: none;
+}
+
+/* Make the toast functional without extra drama. */
+
+.toast {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+}
+
+/* Respect accessibility preferences. */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    scroll-behavior: auto !important;
+    transition: none !important;
+  }
+}
+
