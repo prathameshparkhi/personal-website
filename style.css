@@ -1,53 +1,52 @@
 
+/* my website css */
+
 body {
     font-family: Arial, sans-serif;
-    background-color: #111111;
+    background-color: #111;
     color: white;
     margin: 0;
     padding: 20px;
 }
 
+
+
+
+
 a {
     color: #ff6caf;
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1, h2, h3 {
-    color: #ff6caf;
+ color: #ff6caf;
 }
+
+
+
 
 p {
     line-height: 1.6;
 }
 
-button, .button {
-    font-family: Arial, sans-serif;
-    background-color: #ff6caf;
-    color: black;
-    border: 1px solid #ff6caf;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-
-button:hover, .button:hover {
-    background-color: white;
-}
-
 .site-shell {
-    max-width: 1000px;
+  max-width: 1000px;
     margin: auto;
 }
+
+
+/* top part */
 
 .topbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid #444444;
+    border-bottom: 1px solid #444;
 }
 
 .brand {
-    color: white;
+  color: white;
     font-size: 20px;
 }
 
@@ -56,7 +55,7 @@ button:hover, .button:hover {
 }
 
 .nav {
-    display: flex;
+  display: flex;
     gap: 20px;
 }
 
@@ -65,77 +64,90 @@ button:hover, .button:hover {
 }
 
 .nav-link:hover {
-    color: #ff6caf;
+  color: #ff6caf;
 }
 
+
+/* sections */
+
 .panel {
-    padding: 40px 20px;
+  padding: 40px 20px;
     margin: 20px 0;
-    border: 1px solid #444444;
+    border: 1px solid #444;
     background-color: #1b1b1b;
 }
 
 .hero {
     min-height: 300px;
-    display: flex;
+  display: flex;
     justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
 
 .hero h1 {
     font-size: 45px;
 }
 
+.scroll-cue {
+  align-self: flex-end;
+}
+
+
+
+
+
+
+/* planet thing */
+
 .planet {
     width: 120px;
-    height: 120px;
+  height: 120px;
     position: relative;
 }
 
 .planet-body {
     width: 100px;
     height: 100px;
-    background-color: #b57cff;
+   background-color: #b57cff;
     border-radius: 50%;
     position: absolute;
     top: 10px;
-    left: 10px;
+  left: 10px;
 }
 
 .planet-ring {
     width: 130px;
-    height: 35px;
+  height: 35px;
     border: 3px solid #ff6caf;
-    border-radius: 50%;
+  border-radius: 50%;
     position: absolute;
-    top: 40px;
+  top: 40px;
     left: -5px;
 }
 
-.scroll-cue {
-    align-self: flex-end;
-}
+
+/* about me */
 
 .about {
     display: flex;
-    gap: 30px;
+  gap: 30px;
     justify-content: space-between;
 }
 
 .about-copy, .interest-box {
-    flex: 1;
+  flex: 1;
 }
 
 .interest {
     display: flex;
-    gap: 15px;
+  gap: 15px;
     align-items: center;
-    padding: 15px 0;
-    border-bottom: 1px solid #444444;
+  padding: 15px 0;
+    border-bottom: 1px solid #444;
 }
 
 .interest-icon {
-    color: #ff6caf;
+  color: #ff6caf;
     font-size: 24px;
 }
 
@@ -144,64 +156,105 @@ button:hover, .button:hover {
 }
 
 .interest small {
-    color: #bbbbbb;
+  color: #bbb;
     margin-top: 5px;
 }
 
+.small {
+    display: inline-block;
+  margin-top: 10px;
+}
+
+
+
+
+
+/* contact */
+
 .contact {
-    text-align: center;
+  text-align: center;
 }
 
 .contact h2 {
     font-size: 40px;
 }
 
-.small {
-    display: inline-block;
-    margin-top: 10px;
+
+
+
+
+/* buttons are red now */
+
+button, .button {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+     border: 1px solid red;
+     padding: 10px 15px;
+   border-radius: 0;
+     cursor: pointer;
+  box-shadow: none;
+    transition: none;
+  animation: none;
 }
+
+button:hover, .button:hover {
+  background-color: darkred;
+    color: white;
+}
+
+
+\
+
+
+
+
+/* popups */
 
 .modal {
     display: none;
-    position: fixed;
+  position: fixed;
     top: 0;
-    left: 0;
+   left: 0;
     width: 100%;
-    height: 100%;
+   height: 100%;
     background-color: #000000dd;
-    justify-content: center;
+   justify-content: center;
     align-items: center;
 }
 
+
 .terminal, .signal-terminal {
-    background-color: #222222;
+  background-color: #222;
     border: 1px solid #ff6caf;
-    padding: 20px;
+  padding: 20px;
     width: 80%;
-    max-width: 500px;
+  max-width: 500px;
 }
+
+
 
 .terminal-bar, .signal-header {
     display: flex;
-    justify-content: space-between;
+  justify-content: space-between;
     align-items: center;
 }
 
 .terminal-body {
-    min-height: 100px;
+  min-height: 100px;
 }
 
 .terminal-form {
     display: flex;
-    gap: 10px;
+  gap: 10px;
 }
 
 .terminal-form input {
-    flex: 1;
-    background-color: #111111;
-    color: white;
-    border: 1px solid #555555;
-    padding: 8px;
+  flex: 1;
+    background-color: #111;
+  color: white;
+    border: 1px solid #555;
+  padding: 8px;
 }
 
 .signal-content h2 {
@@ -209,20 +262,24 @@ button:hover, .button:hover {
 }
 
 .signal-intro {
-    color: #bbbbbb;
+  color: #bbb;
 }
+
+
+/* social links */
 
 .signal-grid {
     display: flex;
-    flex-direction: column;
+  flex-direction: column;
     gap: 10px;
 }
 
+
 .signal-card {
-    display: flex;
+  display: flex;
     align-items: center;
     gap: 15px;
-    background-color: #333333;
+    background-color: #333;
     padding: 12px;
     color: white;
 }
@@ -231,43 +288,54 @@ button:hover, .button:hover {
     flex: 1;
 }
 
+
+
 .signal-card small, .signal-card strong, .signal-card span {
-    display: block;
+  display: block;
+    
     margin-bottom: 5px;
 }
 
 .signal-card small {
-    color: #bbbbbb;
+    color: #bbb;
 }
 
 .signal-card-icon {
-    color: #ff6caf;
+  color: #ff6caf;
     font-size: 22px;
 }
+
 
 .signal-status span {
     display: inline-block;
     width: 8px;
     height: 8px;
-    background-color: #55dd88;
+   background-color: #55dd88;
     border-radius: 50%;
+    
 }
 
 .signal-close {
-    font-size: 20px;
+  font-size: 20px;
 }
+
 
 .toast {
     display: none;
-    position: fixed;
+    
+  position: fixed;
+    
     bottom: 20px;
-    left: 20px;
-    background-color: #333333;
-    padding: 12px;
+  left: 20px;
+    background-color: #333;
+  padding: 12px;
 }
 
+
+/* not using these for now */
+
 .loader {
-    display: none;
+  display: none;
 }
 
 .space-bg, .cursor-dot, .cursor-ring {
@@ -275,194 +343,197 @@ button:hover, .button:hover {
 }
 
 .reveal {
-    opacity: 1;
+  opacity: 1;
 }
 
 .magnetic {
-    transition: none;
+    transform: none !important;
+  transition: none !important;
 }
+
+
+/* pixel lives down here */
 
 #pixel-companion {
     position: fixed;
     right: 20px;
     bottom: 20px;
-    text-align: center;
+  text-align: center;
     z-index: 10;
 }
 
+
 .pixel-bubble, .pixel-window {
-    background-color: #222222;
+  background-color: #222;
     border: 1px solid #b57cff;
-    padding: 10px;
+  padding: 10px;
     margin-bottom: 10px;
 }
 
+
+
+
+
 .pixel-sprite {
     width: 80px;
-    height: 80px;
+  height: 80px;
 }
 
 #pixel-creature {
-    background: none;
+  background: transparent;
     border: none;
     padding: 0;
 }
 
 .pixel-label {
     font-size: 12px;
-    margin-top: 5px;
+  margin-top: 5px;
 }
 
 .pixel-label span {
-    color: #55dd88;
+  color: #55dd88;
 }
 
 .pixel-actions {
     display: flex;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
     gap: 5px;
 }
 
 .pixel-actions button {
-    padding: 5px;
+  padding: 5px;
 }
 
 .pixel-hint, .pixel-status {
     font-size: 12px;
+    
 }
 
+
+/* trail stuff */
+
 #pixel-trail {
-    display: none;
+  display: none;
 }
+
+
+/* lamp */
 
 #pixel-lamp {
     position: fixed;
-    top: 0;
+  top: 0;
     left: 20px;
-    z-index: 5;
+  z-index: 5;
 }
 
 #lamp-switch {
-    background: none;
+  background: transparent;
     border: none;
-    padding: 0;
+  padding: 0;
 }
 
 .lamp-chain span {
     display: block;
-    width: 2px;
+   width: 2px;
     height: 10px;
-    background-color: #aaaaaa;
+   background-color: #aaa;
     margin: auto;
 }
 
 .lamp-shade {
-    width: 60px;
+  width: 60px;
     height: 30px;
-    background-color: #aaaaaa;
+   background-color: #aaa;
     border-radius: 5px 5px 25px 25px;
-    position: relative;
+  position: relative;
 }
 
-.lamp-cap, .lamp-roof, .lamp-roof-bottom, .lamp-bulb, .lamp-rim {
+.lamp-cap, .lamp-roof, .lamp-roof-bottom,
+.lamp-bulb, .lamp-rim {
     display: none;
 }
 
 .lamp-pull span {
-    display: block;
+  display: block;
     width: 2px;
-    height: 8px;
-    background-color: #aaaaaa;
-    margin-left: 45px;
+   height: 8px;
+    background-color: #aaa;
+  margin-left: 45px;
 }
 
 .lamp-pull i {
     display: block;
     width: 6px;
     height: 6px;
-    background-color: #ff6caf;
+    background-color: red;
     border-radius: 50%;
-    margin-left: 43px;
+  margin-left: 43px;
 }
 
 .lamp-light {
     display: none;
 }
 
+
+/* phone layout */
+
 @media (max-width: 600px) {
-    body {
-        padding: 10px;
-    }
+  body {
+      padding: 10px;
+  }
 
     .topbar {
-        flex-wrap: wrap;
-        gap: 15px;
+    flex-wrap: wrap;
+      gap: 15px;
     }
 
-    .nav {
-        gap: 10px;
-    }
+  .nav {
+      gap: 10px;
+  }
 
     .hero {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 30px;
-    }
+      flex-direction: column;
+    align-items: flex-start;
+      gap: 30px;
+  }
 
     .hero h1 {
-        font-size: 32px;
+      font-size: 32px;
     }
 
-    .about {
-        flex-direction: column;
-    }
+  .about {
+      flex-direction: column;
+  }
 
     .planet {
-        align-self: center;
+      align-self: center;
     }
 
-    #pixel-companion {
-        right: 10px;
-        bottom: 10px;
-    }
+  #pixel-companion {
+      right: 10px;
+    bottom: 10px;
+  }
 
     .pixel-sprite {
-        width: 60px;
-        height: 60px;
-    }
+      width: 60px;
+    height: 60px;
+  }
 }
-button,
-.button,
-.pixel-actions button,
-#systemButton,
-#pixel-creature,
-#pixel-close,
-#closeTerminal,
-#closeSignal,
-#lamp-switch {
-    font-family: Arial, sans-serif;
+
+
+/* other buttons */
+
+#systemButton, #pixel-close, #closeTerminal, #closeSignal {
     background: red;
     color: white;
     border: 1px solid red;
-    padding: 10px 15px;
-    border-radius: 0;
-    box-shadow: none;
-    transform: none;
-    transition: none;
-    animation: none;
-    cursor: pointer;
+  cursor: pointer;
 }
 
-button:hover,
-.button:hover,
-.pixel-actions button:hover {
-    background: darkred;
-    color: white;
-    box-shadow: none;
-    transform: none;
-}
+/* keep pixel and lamp normal */
 
-.magnetic {
-    transform: none !important;
-    transition: none !important;
+#pixel-creature, #lamp-switch {
+    background: transparent;
+    border: none;
+  padding: 0;
 }
