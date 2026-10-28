@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* LOADER */
+    /* loader */
 
     const loader = document.getElementById("loader");
     const progress = document.getElementById("loaderProgress");
     const loaderText = document.getElementById("loaderText");
-
     const loadingMessages = [
         "INITIALISING SYSTEM...",
         "LOADING STARFIELD...",
@@ -13,91 +12,61 @@ document.addEventListener("DOMContentLoaded", () => {
         "CALIBRATING PIXELS...",
         "SYSTEM READY."
     ];
-
     let percentage = 0;
-
     if (loader && progress && loaderText) {
         const loading = setInterval(() => {
             percentage = Math.min(
                 percentage + Math.random() * 12 + 7,
                 100
+
+
+
+
+
+
+
+                
             );
-
             progress.style.width = `${percentage}%`;
-
             const index = Math.min(
                 Math.floor(percentage / 20),
                 loadingMessages.length - 1
             );
 
-            loaderText.textContent = loadingMessages[index];
 
+
+
+
+
+            
+            loaderText.textContent = loadingMessages[index];
             if (percentage >= 100) {
                 clearInterval(loading);
-
                 setTimeout(() => {
                     loader.classList.add("hidden");
                 }, 650);
             }
+
+
+
+
+            
         }, 120);
     } else if (loader) {
         loader.classList.add("hidden");
     }
+  
 
 
-    /* ACTIVE NAVIGATION */
-
-    const sections = document.querySelectorAll("main section");
-    const links = document.querySelectorAll(".nav-link");
-
-    if ("IntersectionObserver" in window) {
-        const sectionObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-
-                links.forEach(link => {
-                    link.classList.toggle(
-                        "active",
-                        link.getAttribute("href") === `#${entry.target.id}`
-                    );
-                });
-            });
-        }, { threshold: 0.45 });
-
-        sections.forEach(section => {
-            sectionObserver.observe(section);
-        });
-
-        /* SCROLL REVEAL */
-
-        const revealObserver = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (!entry.isIntersecting) return;
-
-                entry.target.classList.add("visible");
-                revealObserver.unobserve(entry.target);
-            });
-        }, { threshold: 0.12 });
-
-        document.querySelectorAll(".reveal").forEach(element => {
-            revealObserver.observe(element);
-        });
-    } else {
-        document.querySelectorAll(".reveal").forEach(element => {
-            element.classList.add("visible");
-        });
-    }
-
-
-    /* MAGNETIC BUTTONS */
+    
 
     document.querySelectorAll(".magnetic").forEach(element => {
         element.addEventListener("mousemove", event => {
             const rect = element.getBoundingClientRect();
 
+            
             const x = (event.clientX - rect.left - rect.width / 2) * 0.1;
             const y = (event.clientY - rect.top - rect.height / 2) * 0.1;
-
             element.style.transform = `translate(${x}px, ${y}px)`;
         });
 
@@ -105,44 +74,21 @@ document.addEventListener("DOMContentLoaded", () => {
             element.style.transform = "";
         });
     });
-
-
-    /* 3D TILT */
-
-    document.querySelectorAll(".tilt-card").forEach(card => {
-        card.addEventListener("mousemove", event => {
-            const rect = card.getBoundingClientRect();
-
-            const x = event.clientX - rect.left;
-            const y = event.clientY - rect.top;
-
-            const rotateY = (x / rect.width - 0.5) * 7;
-            const rotateX = (y / rect.height - 0.5) * -7;
-
-            card.style.transform =
-                `perspective(700px) rotateX(${rotateX}deg) ` +
-                `rotateY(${rotateY}deg) translateY(-5px)`;
-        });
-
-        card.addEventListener("mouseleave", () => {
-            card.style.transform = "";
-        });
-    });
-
-
-    /* GAMEBOY BUTTONS */
+    /*3d tilt- remooved*/
+    /* Gameboy butons */
 
     const gameMessage = document.getElementById("gameMessage");
-
     document.querySelectorAll(".game-button").forEach(button => {
+        
         button.addEventListener("click", () => {
             const key = button.dataset.game;
-
             const gameMessages = {
                 A: [
                     "SIGNAL RECEIVED",
                     "PIXEL MODE ON",
                     "NICE CHOICE"
+
+                    
                 ],
                 B: [
                     "NICE TRY",
@@ -150,16 +96,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     "LEVEL UP"
                 ]
             };
-
             const options = gameMessages[key];
-
             if (!gameMessage || !options || options.length === 0) {
                 return;
             }
-
             gameMessage.textContent =
                 options[Math.floor(Math.random() * options.length)];
-
             setTimeout(() => {
                 gameMessage.textContent = "PRESS A OR B";
             }, 1400);
@@ -167,27 +109,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* CONTACT / SEND A SIGNAL */
+    /* send a signal argument */
 
     const signalButton = document.getElementById("signalButton");
     const signalModal = document.getElementById("signalModal");
     const closeSignal = document.getElementById("closeSignal");
-
+    
     function closeSignalModal() {
         if (!signalModal) return;
-
         signalModal.classList.remove("open");
         signalModal.setAttribute("aria-hidden", "true");
     }
-
     if (signalButton && signalModal && closeSignal) {
         signalButton.addEventListener("click", () => {
             signalModal.classList.add("open");
             signalModal.setAttribute("aria-hidden", "false");
         });
-
         closeSignal.addEventListener("click", closeSignalModal);
-
         signalModal.addEventListener("click", event => {
             if (event.target === signalModal) {
                 closeSignalModal();
@@ -196,21 +134,22 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* TERMINAL */
+    /* terminal click acess */
 
     const modal = document.getElementById("terminalModal");
+
     const openTerminalButton = document.getElementById("systemButton");
     const closeTerminalButton = document.getElementById("closeTerminal");
     const terminalForm = document.getElementById("terminalForm");
+    
     const terminalInput = document.getElementById("terminalInput");
     const terminalOutput = document.getElementById("terminalOutput");
 
+    
     function openTerminal() {
         if (!modal) return;
-
         modal.classList.add("open");
         modal.setAttribute("aria-hidden", "false");
-
         if (terminalInput) {
             setTimeout(() => terminalInput.focus(), 100);
         }
@@ -218,19 +157,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function closeTerminal() {
         if (!modal) return;
-
         modal.classList.remove("open");
         modal.setAttribute("aria-hidden", "true");
     }
-
     if (modal && openTerminalButton) {
         openTerminalButton.addEventListener("click", openTerminal);
     }
-
     if (modal && closeTerminalButton) {
         closeTerminalButton.addEventListener("click", closeTerminal);
     }
-
     if (modal) {
         modal.addEventListener("click", event => {
             if (event.target === modal) closeTerminal();
@@ -240,22 +175,18 @@ document.addEventListener("DOMContentLoaded", () => {
     const commands = {
         help: () =>
             "COMMANDS: help, about, projects, blog, contact, clear, stardance, normal",
-
         about: () =>
             "A curious builder exploring code, ideas, stars and digital experiences.",
-
         projects: () =>
             "PROJECTS: COMMON GROUND / STARDANCE / MORE SOON",
-
         blog: () =>
             "BLOG: thoughts, stories, tech, experiments.",
 
+        
         contact: () =>
             "UPLINK: scroll to CONTACT and send a signal.",
-
         stardance: () => {
             document.body.classList.toggle("stardance-mode");
-
             return document.body.classList.contains("stardance-mode")
                 ? "STARDANCE MODE ACTIVATED"
                 : "STARDANCE MODE DEACTIVATED";
@@ -281,6 +212,9 @@ document.addEventListener("DOMContentLoaded", () => {
         terminalForm.addEventListener("submit", event => {
             event.preventDefault();
 
+
+
+            
             const command = terminalInput.value.trim().toLowerCase();
             if (!command) return;
 
@@ -289,6 +223,9 @@ document.addEventListener("DOMContentLoaded", () => {
             if (Object.prototype.hasOwnProperty.call(commands, command)) {
                 const result = commands[command]();
 
+
+
+                
                 if (result === "__CLEAR__") {
                     terminalOutput.replaceChildren();
                 } else {
@@ -302,18 +239,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
             terminalInput.value = "";
             terminalOutput.scrollTop = terminalOutput.scrollHeight;
+
+
+            
         });
     }
 
 
-    /* ESCAPE KEY */
-
-    document.addEventListener("keydown", event => {
-        if (event.key === "Escape") {
-            closeTerminal();
-            closeSignalModal();
-        }
-    });
+    /* ESCAPE KEY *
 
 
     /* STARDANCE EASTER EGG */
@@ -334,14 +267,13 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         if (event.key.length !== 1) return;
-
         secret += event.key.toLowerCase();
         secret = secret.slice(-secretCode.length);
-
         if (secret === secretCode) {
             document.body.animate(
                 [
                     { filter: "hue-rotate(0deg)" },
+                    
                     { filter: "hue-rotate(90deg)" },
                     { filter: "hue-rotate(0deg)" }
                 ],
@@ -354,29 +286,17 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* TOAST */
-
-    function showToast(message) {
-        const toast = document.getElementById("toast");
-        if (!toast) return;
-
-        toast.textContent = message;
-        toast.classList.add("show");
-
-        clearTimeout(showToast.timer);
-
-        showToast.timer = setTimeout(() => {
-            toast.classList.remove("show");
-        }, 2200);
-    }
-
+    /* TOAST
 
     /* PIXEL COMPANION */
 
     const pixelCreature = document.getElementById("pixel-creature");
     const pixelWindow = document.getElementById("pixel-window");
+
+    
     const pixelClose = document.getElementById("pixel-close");
     const pixelBubble = document.getElementById("pixel-bubble");
+    
     const pixelMood = document.getElementById("pixel-mood");
 
     if (pixelCreature && pixelWindow) {
@@ -391,6 +311,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
+
+
+    
     const pixelReplies = {
         pet: ["AFFECTION RECEIVED", "FRIENDSHIP +1", "PURR.EXE"],
         feed: ["ENERGY RESTORED", "YUM.EXE", "PIXEL IS HAPPY"],
@@ -405,14 +328,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!replies) return;
 
+
+
+            
             const reply = replies[Math.floor(Math.random() * replies.length)];
 
             if (pixelBubble) pixelBubble.textContent = reply;
             if (pixelMood) pixelMood.textContent = action.toUpperCase();
 
+            
             if (action === "dance" && pixelCreature) {
                 pixelCreature.classList.add("pixel-dancing");
 
+
+
+                
                 setTimeout(() => {
                     pixelCreature.classList.remove("pixel-dancing");
                 }, 1000);
@@ -421,11 +351,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 
-    /* PIXEL LAMP */
+    
+
+    /* lamp hanger*/
 
     const lamp = document.getElementById("pixel-lamp");
     const lampSwitch = document.getElementById("lamp-switch");
-
     if (lamp && lampSwitch) {
         lampSwitch.addEventListener("click", () => {
             const isOn = lamp.classList.toggle("lamp-on");
@@ -440,40 +371,9 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* CUSTOM CURSOR */
-
-    const cursorDot = document.getElementById("cursorDot");
-    const cursorRing = document.getElementById("cursorRing");
-
-    if (cursorDot && cursorRing && window.matchMedia("(pointer: fine)").matches) {
-        document.addEventListener("mousemove", event => {
-            cursorDot.style.left = `${event.clientX}px`;
-            cursorDot.style.top = `${event.clientY}px`;
-
-            cursorRing.style.left = `${event.clientX}px`;
-            cursorRing.style.top = `${event.clientY}px`;
-        });
-    }
 
 
-    /* PIXEL TRAIL */
-
-    const trailCanvas = document.getElementById("pixel-trail");
-    const trailContext = trailCanvas ? trailCanvas.getContext("2d") : null;
-
-    if (trailCanvas && trailContext) {
-        const resizeTrail = () => {
-            const ratio = Math.min(window.devicePixelRatio || 1, 2);
-
-            trailCanvas.width = Math.floor(window.innerWidth * ratio);
-            trailCanvas.height = Math.floor(window.innerHeight * ratio);
-
-            trailCanvas.style.width = `${window.innerWidth}px`;
-            trailCanvas.style.height = `${window.innerHeight}px`;
-
-            trailContext.setTransform(ratio, 0, 0, ratio, 0, 0);
-        };
-
+    
         resizeTrail();
         window.addEventListener("resize", resizeTrail);
 
@@ -524,25 +424,17 @@ document.addEventListener("DOMContentLoaded", () => {
                 );
             }
 
+
+
+
+
+
+
+
+            
             trailContext.globalAlpha = 1;
             requestAnimationFrame(drawTrail);
         };
 
         drawTrail();
     }
-
-
-    /* CONSOLE MESSAGE */
-
-    console.log(`
-╔══════════════════════════════════════╗
-║           PRATHAMESH.EXE             ║
-║           SYSTEM ONLINE              ║
-║           STARDANCE // 2026          ║
-║                                      ║
-║           Type "stardance"           ║
-║           for a secret.              ║
-╚══════════════════════════════════════╝
-    `);
-
-});
