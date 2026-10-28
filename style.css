@@ -431,24 +431,38 @@ button:hover, .button:hover {
         height: 60px;
     }
 }
-
-button, .button {
+button,
+.button,
+.pixel-actions button,
+#systemButton,
+#pixel-creature,
+#pixel-close,
+#closeTerminal,
+#closeSignal,
+#lamp-switch {
     font-family: Arial, sans-serif;
-    background-color: red;
+    background: red;
     color: white;
     border: 1px solid red;
     padding: 10px 15px;
-    cursor: pointer;
     border-radius: 0;
     box-shadow: none;
     transform: none;
     transition: none;
     animation: none;
+    cursor: pointer;
 }
 
-button:hover, .button:hover {
-    background-color: darkred;
+button:hover,
+.button:hover,
+.pixel-actions button:hover {
+    background: darkred;
     color: white;
-    transform: none;
     box-shadow: none;
+    transform: none;
+}
+
+.magnetic {
+    transform: none !important;
+    transition: none !important;
 }
