@@ -431,3 +431,24 @@ button:hover, .button:hover {
         height: 60px;
     }
 }
+
+button, .button {
+    font-family: Arial, sans-serif;
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    animation: none;
+}
+
+button:hover, .button:hover {
+    background-color: darkred;
+    color: white;
+    transform: none;
+    box-shadow: none;
+}
