@@ -1,7 +1,4 @@
-# ✦ PRATHAMESH.EXE
-![PRATHAMESH.EXE Preview](./preview.png)
-
-![Website Screenshot 2](./preview1.png)
+#Prathamesh.exe!
 
 
 
