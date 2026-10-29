@@ -11,7 +11,7 @@ check it out here: [PRATHAMESH.EXE](https://prathameshparkhi.github.io/personal-
 
 ### features
 
-- **blog** — this pages lists all my projects, my goals and my academic status
+- **about meh** — this pages lists all my projects, my goals and my academic status
 - **interactive terminal** — a harmless little terminal where you can type `help` for more commands
 - **Pixel.exe** — a tiny digital roommate. pet it, feed it, make it dance, or just stare at it
 
