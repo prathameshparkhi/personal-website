@@ -1,43 +1,32 @@
-#Prathamesh.exe!
+# the best website-ish thing
+
+the BEST website ive ever made (ive only made one). it is quite plain and basic as im quite a beginner to coding.
+
+throughout my website building process, ive learnt html, java, css basics. this is the largely updated version after i removed all ai generated sections.
+
+## hosted website 
+
+link: https://prathameshparkhi.github.io/personal-website/
+
+## primary features
+- a tiny introduction of me, my interests
+- cool design language (atleast according to me)
+- a tiny bot that doesn't work on clicking [I can't figure it out :(
+- my contact hyperlinks (my LinkedIn, Instagram, email and insta which is private)
+
+## running it locally ig
+nothing complicated (i figured it out in 2 mins)
+
+1. copy thsi repository 
+2. open index.html in your browser 
+3. have fun and take a look around!
+
+
+thats about it!
+made with alots of love!
+
+hey shipwrights! after having AI write my previous readme, i would like to tell you that this is completely written by me and i have NOT used ai at all pls understand.
 
 
 
 
-# welcome to my corner of the internet!
-
-this wesbsite was never meant to be made until i stumbled upon stardance (mainly cuz i thought making a personal site would be the easiest)
-
-check it out here: [PRATHAMESH.EXE](https://prathameshparkhi.github.io/personal-website/)
-
-### features
-
-- **about meh** — this pages lists all my projects, my goals and my academic status
-- **interactive terminal** — a harmless little terminal where you can type `help` for more commands
-- **Pixel.exe** — a tiny digital roommate. pet it, feed it, make it dance, or just stare at it
-
-- **interactive elements** — little animations and details that make the website feel more alive.
-- **contact section** — links to find me around the internet, including GitHub, LinkedIn, and Instagram.
-
-### easter eggs 
-
-there's more to explore here than just the main sections i promise
-
-- open the terminal and type `help` to discover its commands.
-- find Pixel.exe and interact with your tiny digital roommate.
-- keep an eye out for the little visual details scattered throughout the site.
-- type `stardance` while you are on the home page
-
-i spent a ton of time giving thought to the insignificant secrets
-
-### built with
-
-- HTML
-- CSS
-- JavaScript
-
-### about the project 
-
-so, I decided to create my own website. i didn't want another boring portfolio featuring several projects, some writing, and not much else. instead, I wanted somewhere where I could incorporate everything I liked in one spot. and that includes a retro-inspired, interactive design for the sake of having fun during development.
-
-
-for now, welcome to this corner of the internet. explore and discover all
